@@ -6,8 +6,10 @@ RUN mkdir ${APP_ROOT}
 WORKDIR ${APP_ROOT}
 ADD . ${APP_ROOT}
 
-RUN yarn
+RUN npm install -g yarn && yarn
 
 ENV HOST 0.0.0.0
 
-CMD ["yarn", "prod"]
+CMD ["yarn", "dev"]
+
+EXPOSE 8080
