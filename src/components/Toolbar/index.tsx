@@ -102,7 +102,7 @@ const CephaloEditorToolbar = (props: Props) => {
         icon={<IconList />}
         onTouchTap={onShowSummaryClick}
       />
-      <FlatButton
+      {/* <FlatButton
         disabled={!canExport}
         label="Export"
         icon={
@@ -113,7 +113,7 @@ const CephaloEditorToolbar = (props: Props) => {
           )
         }
         onTouchTap={onExportClick}
-      />
+      /> */}
     </div>
   );
 };
